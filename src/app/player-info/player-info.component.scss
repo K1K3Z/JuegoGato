@@ -1,0 +1,51 @@
+.player-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cat-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .player-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  
+    ion-label {
+      font-size: 16px;
+      font-weight: bold;
+      flex: 1;
+    }
+  
+    ion-input {
+      flex: 2;
+    }
+  
+    .symbol-button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .symbol-button ion-icon {
+      color: #007bff;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  
+    ion-button {
+      flex: 1;
+    }
+  }
+  

@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
+  jugador1: string = 'Jugador 1';
+  jugador2: string = 'Jugador 2';
 
-  constructor() {}
-
-}
+  setJugadores(event: { jugador1: string, jugador2: string }) {
+    this.jugador1 = event.jugador1;
+    this.jugador2 = event.jugador2;
+    console.log('Jugadores:', this.jugador1, this.jugador2);}}

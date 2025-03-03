@@ -1,0 +1,26 @@
+<ion-card class="player-card">
+  <img src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/41961/cat-face-emoji-clipart-md.png" alt="Gato" class="cat-image">
+
+  <div class="player-input">
+    <ion-label>Jugador 1</ion-label>
+    <ion-input [(ngModel)]="jugador1" placeholder="Nombre del Jugador 1"></ion-input>
+    <button class="symbol-button" (click)="seleccionarSimbolo('X')">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+  </div>
+
+  <div class="player-input">
+    <ion-label>Jugador 2</ion-label>
+    <ion-input [(ngModel)]="jugador2" placeholder="Nombre del Jugador 2"></ion-input>
+    <button class="symbol-button" (click)="seleccionarSimbolo('O')">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </button>
+  </div>
+
+  <div class="buttons">
+    <<ion-button expand="full" color="dark" class="boton-grande" (click)="reiniciar()">
+      Reiniciar
+    </ion-button>
+    <ion-button expand="full" color="success" (click)="jugar()">Jugar</ion-button>
+  </div>
+</ion-card>

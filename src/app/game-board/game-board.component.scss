@@ -1,0 +1,49 @@
+.tablero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  ion-grid {
+    width: 300px; /* Ajusta el tamaño del tablero */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-row {
+    flex: 1;
+    display: flex;
+  }
+  
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Agrega los bordes al tablero */
+    height: 100px; /* Ajusta la altura de cada celda */
+  }
+  
+  .casilla {
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .casilla.ocupado {
+    pointer-events: none;
+  }
+  
+  /* ✅ Estilos para marcar la línea ganadora */
+  .ganador {
+    background-color: rgba(255, 0, 0, 0.5); /* Fondo rojo semitransparente */
+  }
+  

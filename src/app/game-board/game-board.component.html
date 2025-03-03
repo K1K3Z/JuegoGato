@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Juego del Gato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <!-- Integración del componente de información de jugadores -->
+  <app-player-info (iniciarJuego)="setJugadores($event)"></app-player-info>
+
+  <div class="tablero">
+    <ion-grid>
+      <ion-row *ngFor="let fila of tablero; let i = index">
+        <ion-col size="4" *ngFor="let casilla of fila; let j = index">
+          <button class="casilla" (click)="jugar(i, j)">
+            {{ tablero[i][j] }}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="mensaje">{{ mensaje }}</div>
+
+  
+
+</ion-content>
