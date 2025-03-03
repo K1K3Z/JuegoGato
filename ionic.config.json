@@ -1,0 +1,7 @@
+{
+  "name": "JuegoGato",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
